@@ -41,3 +41,5 @@ hi Special ctermfg=darkCyan
 hi Constant ctermfg=darkCyan
 hi Comment ctermfg=darkGreen
 au BufRead,BufNewFile *.rb hi rubySymbol ctermfg=green
+
+colorscheme ron
