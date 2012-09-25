@@ -15,6 +15,7 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on
 
@@ -62,3 +63,4 @@ hi Comment ctermfg=darkGreen
 au BufRead,BufNewFile *.rb hi rubySymbol ctermfg=green
 
 colorscheme ron
+autocmd vimenter * NERDTree
