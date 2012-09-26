@@ -63,4 +63,23 @@ hi Comment ctermfg=darkGreen
 au BufRead,BufNewFile *.rb hi rubySymbol ctermfg=green
 
 colorscheme ron
-autocmd vimenter * NERDTree
+
+" NERDTree
+map <silent> \n :NERDTreeMirrorToggle<CR>
+map <silent> \m :NERDTreeFind<CR>
+let NERDTreeWinPos              = 'left'
+let NERDTreeChDirMode           = 0
+let NERDTreeIgnore              = ['\.vim$', '\~$', '\.pyo$', '\.pyc$', '\.svn[\//]$', '\.swp$']
+let NERDTreeSortOrder           = ['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
+let NERDTreeHighlightCursorline = 1
+let NERDTreeShowFiles           = 1 " Show hidden files, too
+let NERDTreeShowHidden          = 1
+let NERDTreeMinimalUI           = 1 " Hide 'up a dir' and help message
+let g:nerdtree_tabs_open_on_console_startup = 1
+let g:nerdtree_tabs_open_on_gui_startup     = 1
+let g:nerdtree_tabs_open_on_new_tab         = 1
+let g:nerdtree_tabs_smart_startup_focus     = 1
+let g:nerdtree_tabs_meaningful_tab_names    = 1
+let g:nerdtree_tabs_synchronize_view        = 1
+au vimenter * NERDTree
+au vimenter * wincmd l
